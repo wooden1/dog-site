@@ -29,18 +29,18 @@ p{
 
 .pimg1 {
     /* background-image: url('./img/image1.jpg'); */
-    background-image: url("https://source.unsplash.com/?dog");
+    background-image: url("https://source.unsplash.com/random/?dogs");
     min-height: 100%;
 }
 
 .pimg2 {
-    background-image: url('./img/image2.jpg');
-    min-height: 400px;
+    background-image: url('https://source.unsplash.com/random/?dog');
+    min-height: 100%;
 }
 
 .pimg3 {
-    background-image: url('./img/image3.jpg');
-    min-height: 400px;
+    background-image: url('https://source.unsplash.com/random/?dogs/1');
+    min-height: 100%;
 }
 
 .section {
@@ -70,9 +70,10 @@ p{
 }
 
 .ptext .border {
-    background-color: #111;
+    background-color: #dfcf76;
     color: #fff;
     padding: 20px;
+    opacity: .8;
 }
 
 .ptext .border.trans {
