@@ -1,16 +1,43 @@
+:root{
+    --main-clr : #dfcf76;
+    --lte-clr : #f4f4f4;
+    --drk-clr: #282e34;
+    --hvr-clr: #ff651d;
+}
 body,
 html {
     height: 100%;
     margin: 0;
-    font-size: 16px;
+    font-size: 10px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    line-height: 1.8em;
+    line-height: 1.25;
     color: #666;
 }
-p{
-    line-height: 1.25;
+
+header{ 
+    position: fixed;
+    display: inline-box;
 }
+
+nav{
+    display: block;
+    border: 2px solid var(--drk-clr);
+    background-color: var(--main-clr);
+    text-align: right;
+    
+}
+nav a{
+    color: var(--drk-clr);
+    font-size: 3em;
+    font-weight: bold;
+    margin: 1.1em;
+
+}
+nav a:hover{
+    color: var(--hvr-clr);
+}
+
 
 .pimg1,
 .pimg2,
@@ -34,11 +61,13 @@ p{
 }
 
 .pimg2 {
+    /* background-image: url('./img/image2.jpg'); */
     background-image: url('https://source.unsplash.com/random/?dog');
     min-height: 100%;
 }
 
 .pimg3 {
+    /* background-image: url('./img/image3.jpg'); */
     background-image: url('https://source.unsplash.com/random/?dogs/1');
     min-height: 100%;
 }
@@ -49,12 +78,12 @@ p{
 }
 
 .section-light {
-    background-color: #f4f4f4;
+    background-color: var(--lte-clr);
     color: #666;
 }
 
 .section-dark {
-    background-color: #282e34;
+    background-color: var(--drk-clr);
     color: #ddd;
 }
 
@@ -64,15 +93,15 @@ p{
     width: 100%;
     text-align: center;
     color: #000;
-    font-size: 27px;
-    letter-spacing: 8px;
+    font-size: 3rem;
+    letter-spacing: .8em;
     text-transform: uppercase;
 }
 
 .ptext .border {
-    background-color: #dfcf76;
+    background-color: var(--main-clr);
     color: #fff;
-    padding: 20px;
+    padding: .3em;
     opacity: .8;
 }
 
@@ -80,6 +109,27 @@ p{
     background-color: transparent;
 }
 
+.border{
+    font-size: 4rem;
+}
+footer{
+    display: grid;
+    text-align: center;
+}
+h4{
+    font-size: 3rem;
+    
+}
+i{
+    font-size: 3.5rem;
+}
+h2{
+    font-size: 3em;
+}
+
+p{
+    font-size: 1.8em;
+}
 @media(max-width:568px) {
     .pimg1,
     .pimg2,
